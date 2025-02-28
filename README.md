@@ -5,7 +5,7 @@
 A digital watermarking tool that allows users to embed and extract invisible watermarks from images using steganography techniques. The tool ensures image integrity and copyright protection by hiding watermarks within image pixels without compromising quality.
 
 
-## Features
+## Features 
 
 - Upload images for watermarking
 - Customize watermark opacity and color
