@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watermarking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="Head-bar">
+        <header class="header-bar">
+            <h1>
+                <img src="{{ url_for('static', filename='D-W.png') }}" alt="Logo">
+                Digital Watermarking
+            </h1>
+        </header>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <h2>Apply watermark to any image for <span>Free</span></h2>
+
+            <form id="uploadForm">
+                <!-- Drag & Drop Upload -->
+                <div class="upload-box" id="dropArea">
+                    <label for="imageInput" class="upload-button">
+                        <span>Upload Images or Drag & Drop</span>
+                        <input type="file" id="imageInput" name="images" accept="image/*" multiple required hidden>
+                    </label>
+                </div>
+
+                <!-- Watermark Text Input -->
+                <input type="text" id="watermarkText" name="watermark_text" placeholder="Enter watermark text" required>
+
+                <!-- Watermark Settings (Side-by-Side) -->
+                <div class="watermark-settings">
+                    <!-- Opacity Slider -->
+                    <div class="opacity-control">
+                        <label for="opacityRange">Opacity:</label>
+                        <input type="range" id="opacityRange" name="opacity" min="0" max="100" value="50">
+                        <span id="opacityValue">50%</span>
+                    </div>
+
+                    <!-- Color Picker -->
+                    <div class="color-control">
+                        <label for="colorPicker">ColorPicker:</label>
+                        <input type="color" id="colorPicker" name="color" value="#FFFFFF">
+                    </div>
+                </div>
+
+                <!-- Apply Watermark Button -->
+                <button type="submit" id="uploadBtn">Apply Watermark</button>
+                <button type="button" id="clearBtn">Clear Page</button>
+
+                <p class="formats">Supported formats: <span>png, jpeg, jpg, webp, heic</span></p>
+                <p class="terms">By uploading images, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+            </form>
+
+            <!-- Image Display Section -->
+            <div id="imageContainer"></div>
+        </div>
+
+        <!-- Instructions Panel -->
+        <div class="instructions-panel">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Click on the "Upload" button or "Drag & Drop" your images.</li>
+                <li>Enter the "Watermark Text" in the input box.</li>
+                <li>Adjust the "Opacity" and "Color" as needed.</li>
+                <li>Click "Apply Watermark" to process the images.</li>
+                <li>Download the watermarked images when ready.</li>
+                <li>Click "Clear Page" to reset everything.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        document.getElementById('clearBtn').addEventListener('click', function() {
+            document.getElementById('uploadForm').reset();
+            document.getElementById('imageContainer').innerHTML = '';
+        });
+    </script>
+</body>
+</html>

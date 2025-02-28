@@ -1,0 +1,289 @@
+/* Dark theme styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    max-width: 60%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 20px;
+   
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+/* Header Bar */
+.Head-bar {
+    color: white;
+    margin-top: 0px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 1%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: linear-gradient(135deg, #3b3939, #1e1e1e);
+
+}
+
+/* Header Styling */
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+/* Logo Styling */
+h1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+/* Upload box styling */
+.upload-box {
+    padding: 20px;
+    border-radius: 10px;
+    background: #292929;
+    text-align: center;
+    margin-bottom: auto;
+    border: 2px dashed #555;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    background: #323232;
+    box-shadow: 0 0 10px rgba(255, 92, 92, 0.3);
+}
+
+.upload-box.dragover {
+    background: #383838;
+    border-color: #ff5c5c;
+    box-shadow: 0 0 12px rgba(255, 92, 92, 0.5);
+}
+
+/* Watermark Settings */
+.watermark-settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.opacity-control, .color-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Opacity Slider */
+#opacityRange {
+    width: 120px;
+    cursor: pointer;
+}
+
+#opacityValue {
+    font-size: 14px;
+    color: #ff5c5c;
+    font-weight: bold;
+}
+
+/* Color Picker */
+input[type="color"] {
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #ff5c5c, #ff1e1e);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: auto;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff1e1e, #d90000);
+    transform: scale(1.07);
+}
+
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+/* Remove Image & Download Button */
+#removeImageBtn, #downloadBtn {
+    background: #444;
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    display: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#removeImageBtn:hover, #downloadBtn:hover {
+    background: #777;
+}
+
+/* Input fields */
+input {
+    margin: 10px 0;
+    padding: 12px;
+    width: 96%;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    background: #292929;
+    color: white;
+}
+
+/* Text and link styling */
+.formats, .terms {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #ff5c5c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Image preview container */
+#imageContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Image box styling */
+.image-box {
+    flex: 1;
+    padding: 10px;
+    max-width: 45%;
+    background: #292929;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    margin: auto;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Adjust the max height as needed */
+    border-radius: 10px;
+    display: block;
+    object-fit: contain;
+}
+
+.image-box:hover {
+    transform: scale(1.03);
+}
+
+/* Instructions Panel */
+.instructions-panel {
+    width: 60%;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.instructions-panel h2 {
+    font-size: 20px;
+    color: #ff5c5c;
+    text-align: center;
+}
+
+
+/* Stylish Download Button
+#downloadBtn {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+#downloadBtn:hover {
+    background: linear-gradient(135deg, #2E7D32, #1B5E20);
+    transform: scale(1.07);
+    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.5);
+}
+
+#downloadBtn:active {
+    transform: scale(1);
+    box-shadow: 0 2px 6px rgba(76, 175, 80, 0.3);
+} */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .watermark-settings {
+        flex-direction: column;
+    }
+
+    #imageContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instructions-panel {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
