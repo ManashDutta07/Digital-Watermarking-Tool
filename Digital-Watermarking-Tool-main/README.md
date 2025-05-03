@@ -19,13 +19,13 @@ A digital watermarking tool that allows users to embed and extract invisible wat
 ## Usage
 
 - Upload an image
-- Configure watermark settings (color, opacity)
+- Configure watermark settings (color , opacity)
 - Apply the watermark
 - Download the processed image
 - Extract watermark from an image when needed
 - Setup & Installation
 
-**Clone the repository:**
+**Clone the repository :**
 
 ```bash
   git clone https://github.com/yourusername/Digital-Watermarking-Tool.git
