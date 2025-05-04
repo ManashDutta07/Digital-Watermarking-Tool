@@ -20,7 +20,7 @@ A digital watermarking tool that allows users to embed and extract invisible wat
 - Upload an image
 - Configure watermark settings (color, opacity)
 - Apply the watermark
-- Download the processed image
+- Download an  processed image
 - Extract watermark from an image when needed
 - Setup & Installation
 
