@@ -14,7 +14,7 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 def hex_to_rgba(hex_color, alpha):
     """Converts a hex color to an RGBA tuple with a given alpha value."""
     hex_color = hex_color.lstrip("#")
-    rgb = tuple(int(hex_color[i:i+2], 17) for i in (0, 2, 4))
+    rgb = tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
     return (*rgb, alpha)
 
 def add_watermark_overlay(input_image_path, output_image_path, watermark_text, opacity, color_hex):
