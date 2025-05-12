@@ -1,6 +1,6 @@
 ## Digital Watermarking Tool
 
-A digital watermarking tool that allows users to embed and extract invisible watermarks from images using steganography techniques. The tool ensures image integrity and copyright protection by hiding watermarks within image pixels without compromising quality.
+A digital watermarking tool allows users to embed and extract invisible watermarks from images using steganography techniques. The tool ensures image integrity and copyright protection by hiding watermarks within image pixels without compromising quality.
 
 
 ## Features 
@@ -9,7 +9,7 @@ A digital watermarking tool that allows users to embed and extract invisible wat
 - Customize watermark opacity and color
 - Embed invisible watermarks using steganography
 - Extract watermarks from processed images
-- User-friendly dark-themed UI
+- User-friendly and a dark-themed UI
 - Download watermarked images
 
 
