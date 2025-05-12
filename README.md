@@ -31,24 +31,24 @@ A digital watermarking tool allows users to embed and extract invisible watermar
   cd Digital-Watermarking_Tool
 ```
     
-## Deployment
+## Deployment - 
 
 Install dependencies:
 ```bash
   pip install flask pillow numpy
 ```
 
-Run the application
+Run the application -
 ```bash
   python app.py
 ```
 
-Open the browser and go to 
+Open the browser and go to -
 ```bash
   http://127.0.0.1:5000/
 ```
 
-## Authors
+## Authors -
 
 - [Samujjwal25](https://github.com/Samujjwal25)
 - [ManashDutta07](https://github.com/ManashDutta07)
