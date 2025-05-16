@@ -6,7 +6,7 @@ A digital watermarking tool allows users to embed and extract invisible watermar
 ## Features 
 
 - Upload images for watermarking
-- Customize watermark opacity and color
+- Customize watermark's opacity and color
 - Embed invisible watermarks using steganography
 - Extract watermarks from processed images
 - User-friendly and a dark-themed UI
